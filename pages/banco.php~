@@ -2,7 +2,7 @@
 
 function conectar(){
     try{ 
-        $pdo = new PDO("mysql:host=??????;dbname=?????","Usuario","Senha");
+        $pdo = new PDO("mysql:host=mysql.hostinger.com.br;dbname=u562043330_livro","u562043330_jetix","6Fr-1.Sf");
     }catch(PDOException $e){
     	echo $e->getMessage();
     }
