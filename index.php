@@ -1,10 +1,11 @@
 <?php include 'header.html'; ?>
 
-    <div class="container" style="">    
+    <div class="container">    
       <div class="text-center">
+      
         <div class="row">  
           <div class="col-md-6 col-md-offset-3">
-            <img class"img-responsive" style="max-width:500px;" src="imagens/logo.png">
+            <img class="img-responsive" style="" src="imagens/logo.png" alt="Logo Img">
           </div>        
         </div>
 
@@ -18,10 +19,10 @@
                 </span>
               </div><!-- /input-group -->
             </div><!-- /.form-group -->
-          </form> 
-        </div><!-- /.row -->         
-        
-      </div>
+          </form>           
+        </div><!-- /.row -->  
+
+      </div><!-- /.text-center -->                  
     </div><!-- /.container-fluid -->      
   </body>
 </html>

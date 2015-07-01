@@ -2,19 +2,24 @@
   <?php 
       include 'header.html'; 
       include 'pages/banco.php';
-      if (isset($_GET['busca'])) {
-        $esp = filter_var($_GET['busca']);  
-      }else {
-        $esp = "";
+      if (isset($_GET['busca'])) 
+      {
+        // Define $keyword como a palavra chave da busca do usuario. 
+        $keyword = filter_var($_GET['busca']);  
       }
-      
-      $resultado = buscarEspecifico($pdo,$esp);         
+      else 
+      {
+        $keyword = "";
+      }    
+
+      $resultado = buscarEspecifico($keyword);
+            
     ?>
     <div class="panel panel-default">
       
       <div class="panel-heading">Resultados</div>
       <div class="panel-body">
-        <p>Resultados da pesquisa "<?php echo $esp; ?>"</p>
+        <p>Resultados da pesquisa "<?php echo $keyword; ?>"</p>
       </div>
      
       <table class="table">
