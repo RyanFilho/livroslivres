@@ -26,3 +26,13 @@ function buscarEspecifico($keyword){
 	$livros->execute();
 	return $livros->fetchAll(PDO::FETCH_ASSOC);
 }
+
+function cadastrarUsuario($name,$email,$password){
+	$pdo = conectar();	
+	$statement = $pdo->prepare('INSERT INTO tb_usuario (id_usuario, nome_usuario, email_usuario, senha_usuario) VALUES (null, :name, :email, :password)');
+	$statement->bindValue(':name', $name, PDO::PARAM_STR);
+	$statement->bindValue(':email', $email, PDO::PARAM_STR);
+	$statement->bindValue(':password', $password, PDO::PARAM_STR);
+	$statement->execute();
+
+}

@@ -1,6 +1,8 @@
 <html>
     <head>
-       <?php include "banco.php"; ?>
+       <?php include "banco.php"; 
+       $todosLivros  = buscarLivros();
+       ?>
         <title>Todos os livros</title>
         <meta charset='UTF-8'>
     </head>
