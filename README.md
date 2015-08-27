@@ -1,5 +1,6 @@
 # livroslivres
-Projeto para estudar mais sobre Web
+Platafomra para compartilhar livros eletronicos atráves de simples uploads.
+Faça um fork e ajude !
 
 Ainda falta :
 - Cadastro dos usuario
