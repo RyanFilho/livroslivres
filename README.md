@@ -1,5 +1,5 @@
 # livroslivres
-Platafomra para compartilhar livros eletronicos atráves de simples uploads.
+Plataforma para compartilhar livros eletronicos através de simples uploads.
 Faça um fork e ajude !
 
 Ainda falta :
